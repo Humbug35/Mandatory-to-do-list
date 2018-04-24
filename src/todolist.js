@@ -50,10 +50,10 @@ export default class ToDoList extends React.Component {
     render() {
         return (
             <div className="main">
-                <h2>My TODOList</h2>
+                <h2>Min Att-Göra-Lista</h2>
                 <form onSubmit={(e) => this.addListItem(e)}>
                     <input type="text" ref="inputElement" />
-                    <button>Klicka på mig</button>
+                    <button className="send">Klicka på mig</button>
                 </form>
                 <ToDoItems entries={this.state.items}
                            onToggle={(i) => this.checkCheckBox(i)}

@@ -2,7 +2,7 @@ import React from 'react';
 
 class ClearAllItems extends React.Component {
     render() {
-        return <button onClick={this.props.removeDone}>Ta bort alla checkade</button>
+        return <button className="clearAllItems" onClick={this.props.removeDone}>Ta bort alla checkade</button>
     }
 }
 
